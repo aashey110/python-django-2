@@ -19,3 +19,4 @@ elif percentage < 60 and percentage >= 40:
 
 else:
     print("You've failed")
+    
