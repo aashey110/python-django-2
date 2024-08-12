@@ -1,7 +1,7 @@
 num1 = int(input("Enter first operand: "))
 num2 = int(input("Enter second operand: "))
 
-print("Select one of the following operation to be performed:\n + (addition)\n-(substraction)\n* (multiplication)\n/ (division)")
+print("Select one of the following operation to be /performed:\n + (addition)\n-(substraction)\n* (multiplication)\n/ (division)")
 
 operator = input("Enter the operator: ")
 
