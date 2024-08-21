@@ -13,16 +13,16 @@ for subject in subjects:
 
 
 if percentage >= 90:
-    print("\nYou've scored distinction")
+    print("You've scored distinction")
 
 elif percentage < 90 and percentage >= 80:
-    print("\nYou've scored First division")
+    print("You've scored First division")
 
 elif percentage < 80 and percentage >= 60:
-    print("\nYou've scored Second division")
+    print("You've scored Second division")
 
 elif percentage < 60 and percentage >= 40:
-    print("\nYou've scored Third division")
+    print("You've scored Third division")
 
 else:
-    print("\nYou've failed")
+    print("You've failed")
