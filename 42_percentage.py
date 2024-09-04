@@ -1,28 +1,70 @@
-marks = {
+total_student_list = []
 
-}
+total_student = int(input("\nEnter total number of student: "))
 
-subjects = ["Math", "Social", "Science", "Nepali", "English", "Computer"]
-total_marks = 0
+for student in range(total_student):
 
-for subject in subjects:
-    marks[subject] = int(input(f"Enter marks for {subject}: "))
-    total_marks = total_marks + marks[subject]
-    percentage = total_marks/len(subjects)
+    student_name = input("\nEnter student name: ")
+
+    subject_mark = {}
+
+    obtained_mark = 0
+
+
+    total_subject = int(input("\nEnter total number of subjects: "))
+
+
+    total_mark = total_subject * 100
+
+
+    for i in range(total_subject):
+
+        subject = input("\nEnter the name of subject: ")
+        mark = input(f"\nEnter marks obtained in {subject}: ")
+        subject_mark[subject] = mark
+
+        obtained_mark = obtained_mark + int(mark)
+
+    percentage = (obtained_mark/total_mark) * 100
+
+    if percentage >= 90:
+        division = 'Distinction'
+
+    elif percentage < 90 and percentage >= 80:
+        division = 'First Division'
+
+    elif percentage < 80 and percentage >= 60:
+        division = 'Second Division'
+
+    elif percentage < 60 and percentage >= 40:
+        division = 'Third Division'
+
+    else:
+        division = 'Fail'
 
 
 
-if percentage >= 90:
-    print("You've scored distinction")
+    subject_mark['percentage'] = percentage
 
-elif percentage < 90 and percentage >= 80:
-    print("You've scored First division")
+    subject_mark['division'] = division
 
-elif percentage < 80 and percentage >= 60:
-    print("You've scored Second division")
+    subject_mark['student_name'] = student_name
 
-elif percentage < 60 and percentage >= 40:
-    print("You've scored Third division")
+    total_student_list.append(subject_mark)
 
-else:
-    print("You've failed")
+print(total_student_list)
+
+
+#give example  of each
+
+#create list
+#append data to list and print
+#access list item using for loop
+
+#create dictionary
+#append data to dictionary and print
+#how to access and change value of dictionary
+#access dictionary item using for loop
+
+#add dictionary to list
+#print mark and student name using loop from data = [{'name':'salman', 'percentage' : 45},{'name':'mithun', 'percentage' : 56},{'name':'katrina', 'percentage' : 75}]
