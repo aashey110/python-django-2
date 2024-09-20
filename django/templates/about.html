@@ -1,0 +1,109 @@
+{% include "header.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Your E-Commerce Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .header {
+            background-color: #f85707;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .header h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            text-align: center;
+        }
+        .container h2 {
+            color: #f85707;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        .container p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #333;
+        }
+        .about-sections {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        .about-section {
+            background-color: white;
+            border: 1px solid #ddd;
+            margin: 10px;
+            padding: 30px;
+            flex: 1 1 calc(33% - 20px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .about-section:hover {
+            transform: translateY(-10px);
+        }
+        .about-section h3 {
+            color: #f85707;
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        .about-section p {
+            font-size: 16px;
+            color: #555;
+        }
+        @media (max-width: 768px) {
+            .about-section {
+                flex: 1 1 100%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <h1>About Us</h1>
+    </header>
+
+    <section class="container">
+        <h2>Who We Are</h2>
+        <p>
+            Welcome to Your E-Commerce Store, your number one source for all your favorite products. 
+            We are dedicated to giving you the very best of quality, customer service, and unbeatable prices.
+            Founded in 2022, we have grown into a trusted e-commerce platform that serves customers globally.
+        </p>
+        
+        <div class="about-sections">
+            <div class="about-section">
+                <h3>Our Mission</h3>
+                <p>To provide an exceptional online shopping experience, delivering high-quality products and excellent customer support.</p>
+            </div>
+            <div class="about-section">
+                <h3>Our Vision</h3>
+                <p>To become the most customer-centric e-commerce platform, where people can find and discover anything they might want to buy online.</p>
+            </div>
+            <div class="about-section">
+                <h3>Our Values</h3>
+                <p>We value trust, commitment, and innovation. Our goal is to build long-term relationships with our customers by offering value and reliability.</p>
+            </div>
+        </div>
+    </section>
+
+{% include "footer.html" %}
+
+</body>
+</html>

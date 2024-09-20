@@ -30,7 +30,7 @@ class Airdefence:
 
 
 
-while  True:
+while  True:zz
     time.sleep(2)
     enemy_rocket = random.choice([True, False])
 
@@ -48,4 +48,3 @@ while  True:
     else:
         print("\nNo enemy detected\n")
         print("________________________________________________________________________________________________")
-
